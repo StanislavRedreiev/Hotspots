@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B79B532C28664BC800B5B708 /* HotspotAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79B532B28664BC800B5B708 /* HotspotAnnotationView.swift */; };
+		B7A3EF8428687B9000CBED15 /* HotspotMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3EF7828687B9000CBED15 /* HotspotMapInteractor.swift */; };
+		B7A3EF8528687B9000CBED15 /* HotspotMapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3EF7928687B9000CBED15 /* HotspotMapModels.swift */; };
+		B7A3EF8628687B9000CBED15 /* HotspotMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3EF7A28687B9000CBED15 /* HotspotMapRouter.swift */; };
+		B7A3EF8728687B9000CBED15 /* HotspotMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3EF7B28687B9000CBED15 /* HotspotMapPresenter.swift */; };
+		B7A3EF8828687B9000CBED15 /* HotspotMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3EF7C28687B9000CBED15 /* HotspotMapViewController.swift */; };
+		B7A3EF8928687B9000CBED15 /* HotspotLocationsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3EF7E28687B9000CBED15 /* HotspotLocationsWorker.swift */; };
+		B7A3EF8B28687B9000CBED15 /* HotspotMapSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3EF8028687B9000CBED15 /* HotspotMapSceneBuilder.swift */; };
+		B7A3EF92286906EE00CBED15 /* AnnotationGeneratorWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3EF91286906EE00CBED15 /* AnnotationGeneratorWorker.swift */; };
+		B7BC338228635948007396BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC338128635948007396BE /* AppDelegate.swift */; };
+		B7BC338428635948007396BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC338328635948007396BE /* SceneDelegate.swift */; };
+		B7BC338928635948007396BE /* HotspotMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BC338728635948007396BE /* HotspotMap.storyboard */; };
+		B7BC338B2863594A007396BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BC338A28635949007396BE /* Assets.xcassets */; };
+		B7BC338E2863594A007396BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BC338C2863594A007396BE /* LaunchScreen.storyboard */; };
+		B7BC339628635D99007396BE /* HotspotsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC339528635D99007396BE /* HotspotsStorage.swift */; };
+		B7BC339828635EB5007396BE /* hotspots.hsl in Resources */ = {isa = PBXBuildFile; fileRef = B7BC339728635EB5007396BE /* hotspots.hsl */; };
+		B7BC339A28636CDD007396BE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC339928636CDD007396BE /* Extension.swift */; };
+		B7BC33A328637305007396BE /* QuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC339D28637305007396BE /* QuadTree.swift */; };
+		B7BC33A428637305007396BE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC339E28637305007396BE /* Extensions.swift */; };
+		B7BC33A528637305007396BE /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC339F28637305007396BE /* Atomic.swift */; };
+		B7BC33A628637305007396BE /* Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC33A028637305007396BE /* Cluster.swift */; };
+		B7BC33A828637305007396BE /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC33A228637305007396BE /* Annotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B79B532B28664BC800B5B708 /* HotspotAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotAnnotationView.swift; sourceTree = "<group>"; };
+		B7A3EF7828687B9000CBED15 /* HotspotMapInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotMapInteractor.swift; sourceTree = "<group>"; };
+		B7A3EF7928687B9000CBED15 /* HotspotMapModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotMapModels.swift; sourceTree = "<group>"; };
+		B7A3EF7A28687B9000CBED15 /* HotspotMapRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotMapRouter.swift; sourceTree = "<group>"; };
+		B7A3EF7B28687B9000CBED15 /* HotspotMapPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotMapPresenter.swift; sourceTree = "<group>"; };
+		B7A3EF7C28687B9000CBED15 /* HotspotMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotMapViewController.swift; sourceTree = "<group>"; };
+		B7A3EF7E28687B9000CBED15 /* HotspotLocationsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotLocationsWorker.swift; sourceTree = "<group>"; };
+		B7A3EF8028687B9000CBED15 /* HotspotMapSceneBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotMapSceneBuilder.swift; sourceTree = "<group>"; };
+		B7A3EF91286906EE00CBED15 /* AnnotationGeneratorWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationGeneratorWorker.swift; sourceTree = "<group>"; };
+		B7BC337E28635948007396BE /* Hotspots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotspots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7BC338128635948007396BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7BC338328635948007396BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7BC338828635948007396BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HotspotMap.storyboard; sourceTree = "<group>"; };
+		B7BC338A28635949007396BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7BC338D2863594A007396BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7BC338F2863594A007396BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7BC339528635D99007396BE /* HotspotsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotsStorage.swift; sourceTree = "<group>"; };
+		B7BC339728635EB5007396BE /* hotspots.hsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hotspots.hsl; sourceTree = "<group>"; };
+		B7BC339928636CDD007396BE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B7BC339C28637305007396BE /* Cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cluster.h; sourceTree = "<group>"; };
+		B7BC339D28637305007396BE /* QuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadTree.swift; sourceTree = "<group>"; };
+		B7BC339E28637305007396BE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B7BC339F28637305007396BE /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		B7BC33A028637305007396BE /* Cluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cluster.swift; sourceTree = "<group>"; };
+		B7BC33A128637305007396BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7BC33A228637305007396BE /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7BC337B28635948007396BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7A3EF6A2868780900CBED15 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B7A3EF7728687B9000CBED15 /* HotspotMap */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B7A3EF7728687B9000CBED15 /* HotspotMap */ = {
+			isa = PBXGroup;
+			children = (
+				B7A3EF8028687B9000CBED15 /* HotspotMapSceneBuilder.swift */,
+				B7A3EF7828687B9000CBED15 /* HotspotMapInteractor.swift */,
+				B7A3EF7928687B9000CBED15 /* HotspotMapModels.swift */,
+				B7A3EF7A28687B9000CBED15 /* HotspotMapRouter.swift */,
+				B7A3EF7B28687B9000CBED15 /* HotspotMapPresenter.swift */,
+				B7A3EF7C28687B9000CBED15 /* HotspotMapViewController.swift */,
+				B7A3EF7D28687B9000CBED15 /* Workers */,
+				B7A3EF8128687B9000CBED15 /* Views */,
+			);
+			path = HotspotMap;
+			sourceTree = "<group>";
+		};
+		B7A3EF7D28687B9000CBED15 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				B7A3EF7E28687B9000CBED15 /* HotspotLocationsWorker.swift */,
+				B7A3EF91286906EE00CBED15 /* AnnotationGeneratorWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		B7A3EF8128687B9000CBED15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B79B532B28664BC800B5B708 /* HotspotAnnotationView.swift */,
+				B7BC338728635948007396BE /* HotspotMap.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7A3EF8E2869007800CBED15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC339728635EB5007396BE /* hotspots.hsl */,
+				B7BC338A28635949007396BE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7A3EF8F286900DA00CBED15 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC339528635D99007396BE /* HotspotsStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		B7A3EF90286900FA00CBED15 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC339928636CDD007396BE /* Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B7BC337528635948007396BE = {
+			isa = PBXGroup;
+			children = (
+				B7BC338028635948007396BE /* Hotspots */,
+				B7BC337F28635948007396BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7BC337F28635948007396BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC337E28635948007396BE /* Hotspots.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7BC338028635948007396BE /* Hotspots */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC338128635948007396BE /* AppDelegate.swift */,
+				B7BC338328635948007396BE /* SceneDelegate.swift */,
+				B7A3EF8E2869007800CBED15 /* Resources */,
+				B7A3EF6A2868780900CBED15 /* Scenes */,
+				B7BC339B28637305007396BE /* ClusterManager */,
+				B7A3EF8F286900DA00CBED15 /* Storage */,
+				B7A3EF90286900FA00CBED15 /* Utilities */,
+				B7BC338C2863594A007396BE /* LaunchScreen.storyboard */,
+				B7BC338F2863594A007396BE /* Info.plist */,
+			);
+			path = Hotspots;
+			sourceTree = "<group>";
+		};
+		B7BC339B28637305007396BE /* ClusterManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC339C28637305007396BE /* Cluster.h */,
+				B7BC339D28637305007396BE /* QuadTree.swift */,
+				B7BC339E28637305007396BE /* Extensions.swift */,
+				B7BC339F28637305007396BE /* Atomic.swift */,
+				B7BC33A028637305007396BE /* Cluster.swift */,
+				B7BC33A128637305007396BE /* Info.plist */,
+				B7BC33A228637305007396BE /* Annotation.swift */,
+			);
+			path = ClusterManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7BC337D28635948007396BE /* Hotspots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7BC33922863594A007396BE /* Build configuration list for PBXNativeTarget "Hotspots" */;
+			buildPhases = (
+				B7BC337A28635948007396BE /* Sources */,
+				B7BC337B28635948007396BE /* Frameworks */,
+				B7BC337C28635948007396BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hotspots;
+			productName = Hotspots;
+			productReference = B7BC337E28635948007396BE /* Hotspots.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7BC337628635948007396BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B7BC337D28635948007396BE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B7BC337928635948007396BE /* Build configuration list for PBXProject "Hotspots" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7BC337528635948007396BE;
+			productRefGroup = B7BC337F28635948007396BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7BC337D28635948007396BE /* Hotspots */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7BC337C28635948007396BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BC338E2863594A007396BE /* LaunchScreen.storyboard in Resources */,
+				B7BC338B2863594A007396BE /* Assets.xcassets in Resources */,
+				B7BC339828635EB5007396BE /* hotspots.hsl in Resources */,
+				B7BC338928635948007396BE /* HotspotMap.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7BC337A28635948007396BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A3EF8B28687B9000CBED15 /* HotspotMapSceneBuilder.swift in Sources */,
+				B7BC33A328637305007396BE /* QuadTree.swift in Sources */,
+				B7BC339A28636CDD007396BE /* Extension.swift in Sources */,
+				B7A3EF8828687B9000CBED15 /* HotspotMapViewController.swift in Sources */,
+				B7BC338228635948007396BE /* AppDelegate.swift in Sources */,
+				B7BC33A528637305007396BE /* Atomic.swift in Sources */,
+				B79B532C28664BC800B5B708 /* HotspotAnnotationView.swift in Sources */,
+				B7A3EF8628687B9000CBED15 /* HotspotMapRouter.swift in Sources */,
+				B7A3EF8428687B9000CBED15 /* HotspotMapInteractor.swift in Sources */,
+				B7BC338428635948007396BE /* SceneDelegate.swift in Sources */,
+				B7A3EF92286906EE00CBED15 /* AnnotationGeneratorWorker.swift in Sources */,
+				B7BC33A828637305007396BE /* Annotation.swift in Sources */,
+				B7BC339628635D99007396BE /* HotspotsStorage.swift in Sources */,
+				B7A3EF8928687B9000CBED15 /* HotspotLocationsWorker.swift in Sources */,
+				B7A3EF8528687B9000CBED15 /* HotspotMapModels.swift in Sources */,
+				B7A3EF8728687B9000CBED15 /* HotspotMapPresenter.swift in Sources */,
+				B7BC33A428637305007396BE /* Extensions.swift in Sources */,
+				B7BC33A628637305007396BE /* Cluster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7BC338728635948007396BE /* HotspotMap.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7BC338828635948007396BE /* Base */,
+			);
+			name = HotspotMap.storyboard;
+			sourceTree = "<group>";
+		};
+		B7BC338C2863594A007396BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7BC338D2863594A007396BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7BC33902863594A007396BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7BC33912863594A007396BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7BC33932863594A007396BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hotspots/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wifimap.Hotspots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7BC33942863594A007396BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hotspots/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wifimap.Hotspots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7BC337928635948007396BE /* Build configuration list for PBXProject "Hotspots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7BC33902863594A007396BE /* Debug */,
+				B7BC33912863594A007396BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7BC33922863594A007396BE /* Build configuration list for PBXNativeTarget "Hotspots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7BC33932863594A007396BE /* Debug */,
+				B7BC33942863594A007396BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7BC337628635948007396BE /* Project object */;
+}
