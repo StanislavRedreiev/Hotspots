@@ -9,8 +9,8 @@ import UIKit
 
 protocol HotspotMapPresentationLogic {
     func presentLoad(response: HotspotMap.Load.Response)
-    func presentDisplayLoadingActivity(response: HotspotMap.StartLoadingActivity.Response)
-    func presentHideLoadingActivity(response: HotspotMap.StopLoadingActivity.Response)
+    func presentStartLoadingActivity(response: HotspotMap.StartLoadingActivity.Response)
+    func presentStopLoadingActivity(response: HotspotMap.StopLoadingActivity.Response)
     func presentErrorHappened(response: HotspotMap.ErrorHappened.Response)
 }
 
@@ -24,14 +24,14 @@ final class HotspotMapPresenter: HotspotMapPresentationLogic {
         viewController?.displayLoad(viewModel: viewModel)
     }
 
-    func presentDisplayLoadingActivity(response: HotspotMap.StartLoadingActivity.Response) {
+    func presentStartLoadingActivity(response: HotspotMap.StartLoadingActivity.Response) {
         let viewModel = HotspotMap.StartLoadingActivity.ViewModel(
             alertTitle: "Hotspots data loading 🚀",
             alertMessage: "Please wait a while until hotspots information will load.")
         viewController?.displayStartLoadingActivity(viewModel: viewModel)
     }
 
-    func presentHideLoadingActivity(response: HotspotMap.StopLoadingActivity.Response) {
+    func presentStopLoadingActivity(response: HotspotMap.StopLoadingActivity.Response) {
         let viewModel = HotspotMap.StopLoadingActivity.ViewModel()
         viewController?.displayStopLoadingActivity(viewModel: viewModel)
     }

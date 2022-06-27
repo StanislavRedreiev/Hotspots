@@ -39,7 +39,7 @@ final class HotspotMapInteractor: NSObject, HotspotMapBusinessLogic {
         hotspotLocationsWorker.delegate = self
         hotspotLocationsWorker.fetchHotspotLocations()
         
-        presenter?.presentDisplayLoadingActivity(response: HotspotMap.StartLoadingActivity.Response())
+        presenter?.presentStartLoadingActivity(response: HotspotMap.StartLoadingActivity.Response())
     }
     
     // MARK: Setup
@@ -62,7 +62,7 @@ extension HotspotMapInteractor: HotspotLocationWorkerDelegate {
     }
     
     func hotspotLocationWorker(_ worker: HotspotLocationsWorkerLogic, didFinishWithError error: Error) {
-        presenter?.presentHideLoadingActivity(response: HotspotMap.StopLoadingActivity.Response())
+        presenter?.presentStopLoadingActivity(response: HotspotMap.StopLoadingActivity.Response())
         presenter?.presentErrorHappened(response: HotspotMap.ErrorHappened.Response())
     }
 }
@@ -75,7 +75,7 @@ extension HotspotMapInteractor: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         let response = HotspotMap.StopLoadingActivity.Response()
-        presenter?.presentHideLoadingActivity(response: response)
+        presenter?.presentStopLoadingActivity(response: response)
         
         if let annotation = annotation as? ClusterAnnotation {
             let identifier = "Cluster"
