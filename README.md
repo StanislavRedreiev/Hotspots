@@ -2,9 +2,9 @@
 Test work for WiFi Map
 
 <b>Work requirements:</b> <br>
-Требуется реализовать на карте кластеризацию точек таким образом чтобы при любом зуме карты отображались кластера. При высоком зуме (ZOOM IN) кластера перестают отображаться и отображаются только точки.
+Cluster points on the map in such a way that clusters are displayed at any zoom level. At high zoom levels (ZOOM IN), clusters disappear, and only individual points are shown.
 
-У кластера имеется 4 размера иконки: маленькая и самая большая. Если отображается большая иконка это говорит от том что в этом кластере большое количество точек.
+Clusters have four different icon sizes: small to the largest. If a large icon is displayed, it indicates that the cluster contains a substantial number of points.
 
 <b>Rules and module description:</b> <br>
 There are 4 sizes of a cluster element depending on the number of elements inside.
